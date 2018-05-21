@@ -25,9 +25,6 @@ class PersonasRepository extends BaseRepository
         'tipo_identificacion_id',
         'identificacion',
         'fecha_nacimiento',
-        'direccion',
-        'telefono1',
-        'telefono2',
         'users_id'
     ];
 

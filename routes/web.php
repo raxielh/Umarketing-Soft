@@ -33,69 +33,15 @@ Route::resource('estados', 'EstadosController');
 
 Route::resource('tipoConceptos', 'TipoConceptosController');
 
-Route::resource('conceptos', 'ConceptosController');
-
 Route::resource('permisos', 'PermisosController');
-
-Route::resource('valoresConceptos', 'ValoresConceptoController');
 
 Route::resource('tipoIdentificacions', 'TipoIdentificacionController');
 
 Route::resource('personas', 'PersonasController');
 
-Route::resource('combos', 'CombosController');
 
-Route::resource('vehiculos', 'VehiculosController');
+Route::resource('campuses', 'CampusController');
 
-Route::resource('galeriaVehiculos', 'GaleriaVehiculosController');
+Route::resource('decanaturas', 'DecanaturasController');
 
-Route::resource('galeriaVehiculos', 'GaleriaVehiculosController');
-
-Route::resource('equipos', 'EquiposController');
-
-Route::resource('estadoFacturas', 'EstadoFacturaController');
-
-Route::resource('estadoComandas', 'EstadoComandaController');
-
-Route::resource('descuentos', 'DescuentoController'); 
-
-Route::resource('proveedores', 'ProveedoresController');
-
-Route::resource('combos', 'CombosController');
-
-Route::resource('comandas', 'ComandaController');
-Route::get('comandas_h/','ComandaController@historial');
-Route::get('comandas_h_s/{comanda}','ComandaController@show2');
-
-Route::get('comandas/concepto_valor/{comanda}',["as" => "concepto_valor", "uses" => "ComandaController@valor_concepto"] );
-Route::get('comandas/valor_concepto_descuento/{comanda}',["as" => "valor_concepto_descuento", "uses" => "ComandaController@valor_concepto_descuento"] );
-
-Route::get('comandas/facturar/{comanda}',["as" => "facturar", "uses" => "ComandaController@facturar"] );
-
-Route::resource('lavados', 'LavadoController');
-
-Route::resource('comandaDetalles', 'ComandaDetalleController');
-
-Route::resource('equipoPersonas', 'EquipoPersonasController');
-
-Route::resource('marcas', 'MarcaController');
-
-Route::resource('lineas', 'LineaController');
-Route::get('lineas_marca/{marca}','LineaController@marca');
-
-Route::resource('remisions', 'RemisionController');
-
-Route::resource('configuracions', 'ConfiguracionController');
-
-Route::resource('administrativos', 'AdministrativoController');
-
-Route::get('procesos/',["as" => "procesos", "uses" => "ProcesosController@index"] );
-Route::get('procesos/administrativo',["as" => "procesos_admin", "uses" => "ProcesosController@Administrativo"] );
-Route::get('procesos/lavadero',["as" => "procesos_lavadero", "uses" => "ProcesosController@Lavadero"] );
-Route::get('procesos/cargar',["as" => "procesos_cargar", "uses" => "ProcesosController@Cargar"] );
-
-Route::resource('gananciaAdministrivos', 'GananciaAdministrivoController');
-
-
-Route::get('reportes/v_ingresosyegresos',["as"=>"v_ingresosyegresos","uses"=>"ReportesController@v_ingresosyegresos"]);
-Route::get('reportes/ingresosyegresos',["as"=>"ingresosyegresos","uses"=>"ReportesController@ingresosyegresos"]);
+Route::resource('decanaturas', 'DecanaturasController');

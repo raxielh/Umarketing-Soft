@@ -6,8 +6,6 @@
         <th>Tipo Identificacion</th>
         <th>Identificacion</th>
         <th>Fecha Nacimiento</th>
-        <th>Direccion</th>
-        <th>Telefono</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -19,8 +17,6 @@
             <td>{!! $personas->des !!}</td>
             <td>{!! $personas->identificacion !!}</td>
             <td>{!! $personas->fecha_nacimiento !!}</td>
-            <td>{!! $personas->direccion !!}</td>
-            <td>{!! $personas->telefono1 !!}</td>
             <td>
                 {!! Form::open(['route' => ['personas.destroy', $personas->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

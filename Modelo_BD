@@ -1,73 +1,19 @@
 php artisan serve --host=192.168.0.5 --port=8000
 php artisan infyom:scaffold $MODEL_NAME
 
-Configuracion
-	concepto_admin_gasto integer:unsigned:foreign,conceptos,id select
-		required
-	concepto_lavador_gasto integer:unsigned:foreign,conceptos,id select
-		required
-
-
-
-*Roles
+php artisan infyom:scaffold Campus
 	descripcion char,100 text
 		required
-	users_id integer:unsigned:foreign,users,id hidden
 
-*Permisos
-	modulo char,100 text
-	descripcion char,100 textarea
-	roles_id integer:unsigned:foreign,roles,id select
-	users_id integer:unsigned:foreign,users,id hidden
-
-
-*UsuariosRol
-	roles_id integer:unsigned:foreign,roles,id select
-		required
-	users_id integer:unsigned:foreign,users,id select
-		required
-
-*Estados
+php artisan infyom:scaffold Decanaturas
 	descripcion char,100 text
 		required
-	users_id integer:unsigned:foreign,users,id hidden
+	campus_id integer:unsigned:foreign,campuses,id hidden
+		required
 
-*TipoConceptos
-	descripcion mediumText textarea
-		required
-	users_id integer:unsigned:foreign,users,id hidden
 
-*Conceptos
-	codigo char,100 text
-		required
-	descripcion mediumText textarea
-		required
-	tipo_conceptos_id integer:unsigned:foreign,tipo_conceptos,id select
-		required
-	estado_id integer:unsigned:foreign,estados,id select
-		required
-	users_id integer:unsigned:foreign,users,id hidden
 
-*ValoresConcepto
-	concepto_id integer:unsigned:foreign,conceptos,id select
-		required
-	valor integer number
-		required
-	users_id integer:unsigned:foreign,users,id hidden
 
-*Combos
-	concepto_id1 integer:unsigned:foreign,conceptos,id text
-		required
-	concepto_id2 integer:unsigned:foreign,conceptos,id select
-		required
-	estado_id integer:unsigned:foreign,estados,id select
-		required
-	users_id integer:unsigned:foreign,users,id hidden
-
-*TipoIdentificacion
-	descripcion mediumText textarea
-		required
-	users_id integer:unsigned:foreign,users,id hidden
 
 *Personas
 	nombre char,100 text

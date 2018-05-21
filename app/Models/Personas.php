@@ -36,9 +36,6 @@ class Personas extends Model
         'tipo_identificacion_id',
         'identificacion',
         'fecha_nacimiento',
-        'direccion',
-        'telefono1',
-        'telefono2',
         'users_id'
     ];
 
@@ -53,9 +50,6 @@ class Personas extends Model
         'tipo_identificacion_id' => 'integer',
         'identificacion' => 'string',
         'fecha_nacimiento' => 'date',
-        'direccion' => 'string',
-        'telefono1' => 'string',
-        'telefono2' => 'string',
         'users_id' => 'integer'
     ];
 

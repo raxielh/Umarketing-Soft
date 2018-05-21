@@ -34,24 +34,6 @@
     <p>{!! $personas->fecha_nacimiento !!}</p>
 </div>
 
-<!-- Direccion Field -->
-<div class="form-group">
-    {!! Form::label('direccion', 'Direccion:') !!}
-    <p>{!! $personas->direccion !!}</p>
-</div>
-
-<!-- Telefono1 Field -->
-<div class="form-group">
-    {!! Form::label('telefono1', 'Telefono1:') !!}
-    <p>{!! $personas->telefono1 !!}</p>
-</div>
-
-<!-- Telefono2 Field -->
-<div class="form-group">
-    {!! Form::label('telefono2', 'Telefono2:') !!}
-    <p>{!! $personas->telefono2 !!}</p>
-</div>
-
 <!-- Users Id Field -->
 <div class="form-group">
     {!! Form::label('users_id', 'Users Id:') !!}

@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateMarcasTable extends Migration
+class CreateDecanaturasTable extends Migration
 {
 
     /**
@@ -13,12 +13,13 @@ class CreateMarcasTable extends Migration
      */
     public function up()
     {
-        Schema::create('marcas', function (Blueprint $table) {
+        Schema::create('decanaturas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('descripcion', 100);
-            $table->integer('users_id')->unsigned();
+            $table->char('descripcion', 100);
+            $table->char('decano', 100);
+            $table->integer('campus_id')->unsigned();
             $table->timestamps();
-            $table->foreign('users_id')->references('id')->on('users');
+            $table->foreign('campus_id')->references('id')->on('campuses');
         });
     }
 
@@ -29,6 +30,6 @@ class CreateMarcasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('marcas');
+        Schema::drop('decanaturas');
     }
 }

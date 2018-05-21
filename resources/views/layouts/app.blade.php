@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>CarWash-Soft</title>
+    <title>Umarketing-Soft</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <link rel="apple-touch-icon" sizes="57x57" href="{{URL::asset('favicon/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{URL::asset('favicon/apple-icon-60x60.png')}}">
@@ -65,10 +65,10 @@
             border-top: 1px solid #ddd;
         }
         .active{
-            background-color: #3c8dbc;
+            background-color: #cd2122;
         }
         .active2{
-            background-color: #3f6b77;
+            background-color: #881415;
         }
         .mostrar{
             display: block !important;
@@ -99,8 +99,8 @@
         <header class="main-header">
 
             <a href="#" class="logo" style="text-decoration: none;">
-                <span class="logo-mini"><b>C</b>Soft</span>
-                <span class="logo-lg"><b>CarWash</b>Soft</span>
+                <span class="logo-mini"><b>UM</b>S</span>
+                <span class="logo-lg"><b>Umarketing</b>Soft</span>
             </a>
 
             <!-- Header Navbar -->
@@ -162,7 +162,7 @@
 
         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © <a href="#">CarWash-Soft</a>.</strong> All rights reserved.
+            <strong>Copyright © <a href="#">Umarketing-Soft</a>.</strong> All rights reserved.
         </footer>
 
     </div>
@@ -236,7 +236,7 @@
         }
 
         $(document).ready( function () {
-            $('.table').DataTable({
+            $('.table_d').DataTable({
                 "ordering": false,
                 "responsive": true
             });
